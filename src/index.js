@@ -1,11 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import App from "./components/App";
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("app")
-);
+import "./index.css";
+import GiftExpertApp from "./components/GifExpertApp";
+ReactDOM.render(<GiftExpertApp />, document.getElementById("app"));
