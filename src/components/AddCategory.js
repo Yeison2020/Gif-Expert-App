@@ -13,7 +13,7 @@ const AddCategory = ({ setCategoties }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputValue.trim().length > 2) {
-      setCategoties((CameFromParent) => [...CameFromParent, inputValue]);
+      setCategoties((CameFromParent) => [inputValue, ...CameFromParent]);
       setInputValue("");
     }
   };
